@@ -1,14 +1,24 @@
 import mongoose from 'mongoose';
 
 const workSchema = new mongoose.Schema({
-  customerName: {
+  groomName: {
     type: String,
     required: true
   },
-  photos: {
-    type: [String]
+  brideName: {
+    type: String,
+    required: true
   },
-  description: {
+  img1: {
+    type: String
+  },
+  img2: {
+    type: String
+  },
+  img3: {
+    type: String
+  },
+  img4: {
     type: String
   }
 }, { timestamps: true });

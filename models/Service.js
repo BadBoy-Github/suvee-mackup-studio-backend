@@ -1,31 +1,23 @@
 import mongoose from 'mongoose';
 
 const serviceSchema = new mongoose.Schema({
-  name: {
+  title: {
     type: String,
     required: true
   },
-  description: {
-    type: String,
-    required: true
-  },
-  category: {
+  subtitle: {
     type: String,
     required: true
   },
   price: {
+    type: String,
+    required: true
+  },
+  description: {
     type: String
   },
-  image: {
+  incl: {
     type: String
-  },
-  isHD: {
-    type: Boolean,
-    default: false
-  },
-  isTop: {
-    type: Boolean,
-    default: false
   }
 }, { timestamps: true });
 
