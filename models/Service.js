@@ -18,6 +18,9 @@ const serviceSchema = new mongoose.Schema({
   },
   incl: {
     type: String
+  },
+  heroImage: {
+    type: String
   }
 }, { timestamps: true });
 
